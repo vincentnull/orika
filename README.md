@@ -8,7 +8,30 @@
 Orika !
 -----------------------------------------------------------------------
 
-**NEW** We are pleased to announce the release of Orika **1.5.4** ! _This version is available on Maven central repository_ 
+**NEW** We are pleased to announce the release of Orika **1.6.0** ! _This version is available on Maven central repository_
+
+## 背景
+There are compatibility issues with version 1.5.4 when running in environments using JDK 17 or higher. The original author has already fixed this issue in the latest master branch, but has not released a new version for a long time. Therefore, I forked the project and created version 1.6.0 based on Orika’s master branch. This version is fully compatible with JDK 17 and has been published to the Maven Central Repository, so everyone can use it directly.
+
+1.5.4版本在JDK17以上的环境中存在兼容性问题，原作者在最新的master中已经修改该问题，但是作者迟迟没有发布新版本，因此，本人fork了一个这个项目，使用orika的master分支创建了一个1.6.0的版本，该版本已经兼容JDK17，并且已经发布到Maven中央仓库，大家可以直接引用。
+```xml
+<dependency>
+    <groupId>io.github.vincentnull</groupId>
+    <artifactId>orika-core</artifactId>
+    <version>1.6.0</version>
+</dependency>
+
+```
+If you want to use `orika-util` directly, you can import it directly.
+
+如果你想直接使用util，可以直接引入 orika-util
+```xml
+<dependency>
+    <groupId>io.github.vincentnull</groupId>
+    <artifactId>orika-util</artifactId>
+    <version>1.6.0</version>
+</dependency>
+```
 
 What?
 =====
